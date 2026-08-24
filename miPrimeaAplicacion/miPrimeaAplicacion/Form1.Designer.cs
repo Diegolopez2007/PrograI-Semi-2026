@@ -49,9 +49,9 @@
             // ltsValores
             // 
             this.ltsValores.FormattingEnabled = true;
-            this.ltsValores.Location = new System.Drawing.Point(81, 188);
+            this.ltsValores.Location = new System.Drawing.Point(35, 188);
             this.ltsValores.Name = "ltsValores";
-            this.ltsValores.Size = new System.Drawing.Size(120, 95);
+            this.ltsValores.Size = new System.Drawing.Size(192, 95);
             this.ltsValores.TabIndex = 2;
             // 
             // btnProcesar
