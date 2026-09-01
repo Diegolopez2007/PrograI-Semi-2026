@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Drawing;
+using System.Data;
 using System.Windows.Forms;
 
 namespace miPrimeaAplicacion
 {
     public partial class Form1 : Form
     {
-        private const double CUOTA_BASE = 2.50;
-        private const double TARIFA_INTERMEDIA = 0.45;
-        private const double TARIFA_ALTA = 0.75;
-
         public Form1()
         {
             InitializeComponent();
@@ -17,65 +13,37 @@ namespace miPrimeaAplicacion
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(txtMetros.Text, out double metros) && metros >= 0)
-            {
-                double total = CalcularMonto(metros);
-                ActualizarInterfazResultado(metros, total);
-            }
-            else
-            {
-                MessageBox.Show("Por favor, ingrese una cantidad numérica de metros cúbicos válida.",
-                                "Dato Inválido",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Warning);
-                txtMetros.Focus();
-            }
-        }
+            // 1. Obtener la cantidad de meses
+            int n = (int)numMeses.Value;
 
-        private void btnLimpiar_Click(object sender, EventArgs e)
-        {
-            txtMetros.Clear();
-            lblTotalPagar.Text = "Total: $0.00";
-            lblEstadoConsumo.Text = "Estado: Esperando datos...";
-            lblEstadoConsumo.ForeColor = Color.FromArgb(100, 100, 100);
-            txtMetros.Focus();
-        }
+            // 2. Validar y obtener el monto mensual ingresado por el usuario
+            if (!decimal.TryParse(txtMontoMes.Text, out decimal cuotaMensual) || cuotaMensual < 0)
+            {
+                MessageBox.Show("Por favor, ingrese un monto mensual válido.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-        private double CalcularMonto(double m3)
-        {
-            if (m3 <= 10)
-            {
-                return CUOTA_BASE;
-            }
-            else if (m3 <= 25)
-            {
-                return CUOTA_BASE + ((m3 - 10) * TARIFA_INTERMEDIA);
-            }
-            else
-            {
-                return CUOTA_BASE + (15 * TARIFA_INTERMEDIA) + ((m3 - 25) * TARIFA_ALTA);
-            }
-        }
+            // 3. Crear la estructura de la tabla
+            DataTable tabla = new DataTable();
+            tabla.Columns.Add("Mes", typeof(int));
+            tabla.Columns.Add("Cuota Mes ($)", typeof(string));
+            tabla.Columns.Add("Deuda Acumulada ($)", typeof(string));
 
-        private void ActualizarInterfazResultado(double m3, double total)
-        {
-            lblTotalPagar.Text = $"Total: ${total:F2}";
+            decimal deudaAcumulada = 0;
 
-            if (m3 <= 10)
+            // 4. Calcular el incremento de la deuda mes a mes
+            for (int i = 1; i <= n; i++)
             {
-                lblEstadoConsumo.Text = "Consumo: Eficiente (Tarifa Base)";
-                lblEstadoConsumo.ForeColor = Color.DarkGreen;
+                deudaAcumulada += cuotaMensual; // La deuda suma la cuota cada mes
+                tabla.Rows.Add(i, cuotaMensual.ToString("N2"), deudaAcumulada.ToString("N2"));
             }
-            else if (m3 <= 25)
-            {
-                lblEstadoConsumo.Text = "Consumo: Moderado";
-                lblEstadoConsumo.ForeColor = Color.DarkOrange;
-            }
-            else
-            {
-                lblEstadoConsumo.Text = "Consumo: Alto (Sanción por exceso)";
-                lblEstadoConsumo.ForeColor = Color.DarkRed;
-            }
+
+            // 5. Asignar datos al DataGridView
+            dgvTabla.DataSource = tabla;
+            dgvTabla.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            // 6. Actualizar la etiqueta con el resultado final
+            lblTotal.Text = $"Deuda Total Acumulada: ${deudaAcumulada:N2}";
         }
     }
 }

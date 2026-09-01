@@ -2,8 +2,15 @@
 {
     partial class Form1
     {
+        /// <summary>
+        /// Variable del diseñador necesaria.
+        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        /// <summary>
+        /// Limpiar los recursos que se estén usando.
+        /// </summary>
+        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -15,85 +22,115 @@
 
         #region Código generado por el Diseñador de Windows Forms
 
+        /// <summary>
+        /// Método necesario para admitir el Diseñador. No se puede modificar
+        /// el contenido de este método con el editor de código.
+        /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.lblMetros = new System.Windows.Forms.Label();
-            this.txtMetros = new System.Windows.Forms.TextBox();
+            this.lblMeses = new System.Windows.Forms.Label();
+            this.numMeses = new System.Windows.Forms.NumericUpDown();
+            this.lblMonto = new System.Windows.Forms.Label();
+            this.txtMontoMes = new System.Windows.Forms.TextBox();
             this.btnCalcular = new System.Windows.Forms.Button();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.lblTotalPagar = new System.Windows.Forms.Label();
-            this.lblEstadoConsumo = new System.Windows.Forms.Label();
+            this.dgvTabla = new System.Windows.Forms.DataGridView();
+            this.lblTotal = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.numMeses)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).BeginInit();
             this.SuspendLayout();
-
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblTitulo.Location = new System.Drawing.Point(95, 9);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(233, 21);
-            this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "Cálculo de Consumo de Agua";
-
-            this.lblMetros.AutoSize = true;
-            this.lblMetros.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMetros.Location = new System.Drawing.Point(12, 59);
-            this.lblMetros.Name = "lblMetros";
-            this.lblMetros.Size = new System.Drawing.Size(227, 18);
-            this.lblMetros.TabIndex = 1;
-            this.lblMetros.Text = "Metros cúbicos consumidos:";
-
-            this.txtMetros.Location = new System.Drawing.Point(33, 80);
-            this.txtMetros.Name = "txtMetros";
-            this.txtMetros.Size = new System.Drawing.Size(240, 20);
-            this.txtMetros.TabIndex = 2;
-
-            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(33, 115);
+            // 
+            // lblMeses
+            // 
+            this.lblMeses.AutoSize = true;
+            this.lblMeses.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMeses.Location = new System.Drawing.Point(20, 20);
+            this.lblMeses.Name = "lblMeses";
+            this.lblMeses.Size = new System.Drawing.Size(124, 17);
+            this.lblMeses.TabIndex = 0;
+            this.lblMeses.Text = "Número de Meses:";
+            // 
+            // numMeses
+            // 
+            this.numMeses.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numMeses.Location = new System.Drawing.Point(150, 18);
+            this.numMeses.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            this.numMeses.Name = "numMeses";
+            this.numMeses.Size = new System.Drawing.Size(80, 25);
+            this.numMeses.TabIndex = 1;
+            this.numMeses.Value = new decimal(new int[] { 12, 0, 0, 0 });
+            // 
+            // lblMonto
+            // 
+            this.lblMonto.AutoSize = true;
+            this.lblMonto.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMonto.Location = new System.Drawing.Point(20, 55);
+            this.lblMonto.Name = "lblMonto";
+            this.lblMonto.Size = new System.Drawing.Size(117, 17);
+            this.lblMonto.TabIndex = 2;
+            this.lblMonto.Text = "Cuota Mensual ($):";
+            // 
+            // txtMontoMes
+            // 
+            this.txtMontoMes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtMontoMes.Location = new System.Drawing.Point(150, 52);
+            this.txtMontoMes.Name = "txtMontoMes";
+            this.txtMontoMes.Size = new System.Drawing.Size(80, 25);
+            this.txtMontoMes.TabIndex = 3;
+            this.txtMontoMes.Text = "100";
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCalcular.Location = new System.Drawing.Point(250, 18);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(110, 30);
-            this.btnCalcular.TabIndex = 3;
+            this.btnCalcular.Size = new System.Drawing.Size(110, 60);
+            this.btnCalcular.TabIndex = 4;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
-
-            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(218, 115);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(110, 30);
-            this.btnLimpiar.TabIndex = 4;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-
-            this.lblTotalPagar.AutoSize = true;
-            this.lblTotalPagar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblTotalPagar.Location = new System.Drawing.Point(30, 165);
-            this.lblTotalPagar.Name = "lblTotalPagar";
-            this.lblTotalPagar.Size = new System.Drawing.Size(149, 20);
-            this.lblTotalPagar.TabIndex = 5;
-            this.lblTotalPagar.Text = "Total a pagar: $0.00";
-
-            this.lblEstadoConsumo.AutoSize = true;
-            this.lblEstadoConsumo.Location = new System.Drawing.Point(30, 195);
-            this.lblEstadoConsumo.Name = "lblEstadoConsumo";
-            this.lblEstadoConsumo.Size = new System.Drawing.Size(135, 13);
-            this.lblEstadoConsumo.TabIndex = 6;
-            this.lblEstadoConsumo.Text = "Estado: Esperando datos...";
-
-
-            this.ClientSize = new System.Drawing.Size(415, 291);
-            this.Controls.Add(this.lblEstadoConsumo);
-            this.Controls.Add(this.lblTotalPagar);
-            this.Controls.Add(this.btnLimpiar);
+            // 
+            // dgvTabla
+            // 
+            this.dgvTabla.AllowUserToAddRows = false;
+            this.dgvTabla.AllowUserToDeleteRows = false;
+            this.dgvTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTabla.Location = new System.Drawing.Point(20, 95);
+            this.dgvTabla.Name = "dgvTabla";
+            this.dgvTabla.ReadOnly = true;
+            this.dgvTabla.RowHeadersWidth = 51;
+            this.dgvTabla.RowTemplate.Height = 25;
+            this.dgvTabla.Size = new System.Drawing.Size(340, 220);
+            this.dgvTabla.TabIndex = 5;
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTotal.Location = new System.Drawing.Point(20, 330);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(180, 19);
+            this.lblTotal.TabIndex = 6;
+            this.lblTotal.Text = "Deuda Acumulada: $0.00";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(380, 370);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.dgvTabla);
             this.Controls.Add(this.btnCalcular);
-            this.Controls.Add(this.txtMetros);
-            this.Controls.Add(this.lblMetros);
-            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.txtMontoMes);
+            this.Controls.Add(this.lblMonto);
+            this.Controls.Add(this.numMeses);
+            this.Controls.Add(this.lblMeses);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Consumo de Agua";
+            this.Text = "Tabla de Meses Acumulados";
+            ((System.ComponentModel.ISupportInitialize)(this.numMeses)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,12 +138,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Label lblMetros;
-        private System.Windows.Forms.TextBox txtMetros;
+        private System.Windows.Forms.Label lblMeses;
+        private System.Windows.Forms.NumericUpDown numMeses;
+        private System.Windows.Forms.Label lblMonto;
+        private System.Windows.Forms.TextBox txtMontoMes;
         private System.Windows.Forms.Button btnCalcular;
-        private System.Windows.Forms.Button btnLimpiar;
-        private System.Windows.Forms.Label lblTotalPagar;
-        private System.Windows.Forms.Label lblEstadoConsumo;
+        private System.Windows.Forms.DataGridView dgvTabla;
+        private System.Windows.Forms.Label lblTotal;
     }
 }

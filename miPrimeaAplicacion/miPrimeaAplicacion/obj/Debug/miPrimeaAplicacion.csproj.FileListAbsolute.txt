@@ -28,3 +28,13 @@ C:\Users\Estudiante\source\repos\PrograI-Semi-2026\miPrimeaAplicacion\miPrimeaAp
 C:\Users\Estudiante\source\repos\PrograI-Semi-2026\miPrimeaAplicacion\miPrimeaAplicacion\obj\Debug\miPrimeaAplicacion.csproj.CoreCompileInputs.cache
 C:\Users\Estudiante\source\repos\PrograI-Semi-2026\miPrimeaAplicacion\miPrimeaAplicacion\obj\Debug\miPrimeaAplicacion.exe
 C:\Users\Estudiante\source\repos\PrograI-Semi-2026\miPrimeaAplicacion\miPrimeaAplicacion\obj\Debug\miPrimeaAplicacion.pdb
+C:\Users\calde\OneDrive\Desktop\Programacion 1\miPrimeaAplicacion\miPrimeaAplicacion\obj\Debug\miPrimeaAplicacion.csproj.AssemblyReference.cache
+C:\Users\calde\OneDrive\Desktop\Programacion 1\miPrimeaAplicacion\miPrimeaAplicacion\obj\Debug\miPrimeaAplicacion.Properties.Resources.resources
+C:\Users\calde\OneDrive\Desktop\Programacion 1\miPrimeaAplicacion\miPrimeaAplicacion\obj\Debug\miPrimeaAplicacion.csproj.GenerateResource.cache
+C:\Users\calde\OneDrive\Desktop\Programacion 1\miPrimeaAplicacion\miPrimeaAplicacion\obj\Debug\miPrimeaAplicacion.csproj.CoreCompileInputs.cache
+C:\Users\calde\OneDrive\Desktop\Programacion 1\miPrimeaAplicacion\miPrimeaAplicacion\obj\Debug\miPrimeaAplicacion.exe
+C:\Users\calde\OneDrive\Desktop\Programacion 1\miPrimeaAplicacion\miPrimeaAplicacion\obj\Debug\miPrimeaAplicacion.pdb
+C:\Users\calde\OneDrive\Desktop\Programacion 1\miPrimeaAplicacion\miPrimeaAplicacion\bin\Debug\miPrimeaAplicacion.exe.config
+C:\Users\calde\OneDrive\Desktop\Programacion 1\miPrimeaAplicacion\miPrimeaAplicacion\bin\Debug\miPrimeaAplicacion.exe
+C:\Users\calde\OneDrive\Desktop\Programacion 1\miPrimeaAplicacion\miPrimeaAplicacion\bin\Debug\miPrimeaAplicacion.pdb
+C:\Users\calde\OneDrive\Desktop\Programacion 1\miPrimeaAplicacion\miPrimeaAplicacion\obj\Debug\miPrimeaAplicacion.Form1.resources
