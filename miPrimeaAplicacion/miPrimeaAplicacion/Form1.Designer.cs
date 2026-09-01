@@ -1,151 +1,112 @@
-﻿namespace DeduccionesSueldo
+﻿namespace miPrimeaAplicacion
 {
     partial class Form1
     {
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.Label lblSueldo, lblISSS, lblAFP, lblISR, lblSueldoNeto;
-        private System.Windows.Forms.TextBox txtSueldoBase, txtISSS, txtAFP, txtISR, txtSueldoNeto;
-        private System.Windows.Forms.Button btnCalcular, btnLimpiar;
-        private System.Windows.Forms.GroupBox grpResultados;
 
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null)) components.Dispose();
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador
+        #region Código generado por el Diseñador de Windows Forms
 
         private void InitializeComponent()
         {
-            this.lblSueldo = new System.Windows.Forms.Label();
-            this.txtSueldoBase = new System.Windows.Forms.TextBox();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.lblMetros = new System.Windows.Forms.Label();
+            this.txtMetros = new System.Windows.Forms.TextBox();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
-            this.grpResultados = new System.Windows.Forms.GroupBox();
-            this.lblISSS = new System.Windows.Forms.Label();
-            this.txtISSS = new System.Windows.Forms.TextBox();
-            this.lblAFP = new System.Windows.Forms.Label();
-            this.txtAFP = new System.Windows.Forms.TextBox();
-            this.lblISR = new System.Windows.Forms.Label();
-            this.txtISR = new System.Windows.Forms.TextBox();
-            this.lblSueldoNeto = new System.Windows.Forms.Label();
-            this.txtSueldoNeto = new System.Windows.Forms.TextBox();
-            this.grpResultados.SuspendLayout();
+            this.lblTotalPagar = new System.Windows.Forms.Label();
+            this.lblEstadoConsumo = new System.Windows.Forms.Label();
             this.SuspendLayout();
 
-            this.lblSueldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSueldo.Location = new System.Drawing.Point(25, 25);
-            this.lblSueldo.Name = "lblSueldo";
-            this.lblSueldo.Size = new System.Drawing.Size(122, 20);
-            this.lblSueldo.TabIndex = 0;
-            this.lblSueldo.Text = "Sueldo Base $:";
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.Location = new System.Drawing.Point(95, 9);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(233, 21);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "Cálculo de Consumo de Agua";
 
-            this.txtSueldoBase.Location = new System.Drawing.Point(153, 25);
-            this.txtSueldoBase.Name = "txtSueldoBase";
-            this.txtSueldoBase.Size = new System.Drawing.Size(100, 20);
-            this.txtSueldoBase.TabIndex = 1;
+            this.lblMetros.AutoSize = true;
+            this.lblMetros.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMetros.Location = new System.Drawing.Point(12, 59);
+            this.lblMetros.Name = "lblMetros";
+            this.lblMetros.Size = new System.Drawing.Size(227, 18);
+            this.lblMetros.TabIndex = 1;
+            this.lblMetros.Text = "Metros cúbicos consumidos:";
 
-            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(120, 187);
+            this.txtMetros.Location = new System.Drawing.Point(33, 80);
+            this.txtMetros.Name = "txtMetros";
+            this.txtMetros.Size = new System.Drawing.Size(240, 20);
+            this.txtMetros.TabIndex = 2;
+
+            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.Location = new System.Drawing.Point(33, 115);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(105, 43);
-            this.btnCalcular.TabIndex = 2;
+            this.btnCalcular.Size = new System.Drawing.Size(110, 30);
+            this.btnCalcular.TabIndex = 3;
             this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
 
-            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(255, 187);
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Location = new System.Drawing.Point(218, 115);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(95, 43);
-            this.btnLimpiar.TabIndex = 3;
+            this.btnLimpiar.Size = new System.Drawing.Size(110, 30);
+            this.btnLimpiar.TabIndex = 4;
             this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
 
-            this.grpResultados.Controls.Add(this.lblISSS);
-            this.grpResultados.Controls.Add(this.txtISSS);
-            this.grpResultados.Controls.Add(this.btnLimpiar);
-            this.grpResultados.Controls.Add(this.btnCalcular);
-            this.grpResultados.Controls.Add(this.lblAFP);
-            this.grpResultados.Controls.Add(this.txtAFP);
-            this.grpResultados.Controls.Add(this.lblISR);
-            this.grpResultados.Controls.Add(this.txtISR);
-            this.grpResultados.Controls.Add(this.lblSueldoNeto);
-            this.grpResultados.Controls.Add(this.txtSueldoNeto);
-            this.grpResultados.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpResultados.Location = new System.Drawing.Point(77, 67);
-            this.grpResultados.Name = "grpResultados";
-            this.grpResultados.Size = new System.Drawing.Size(385, 236);
-            this.grpResultados.TabIndex = 4;
-            this.grpResultados.TabStop = false;
-            this.grpResultados.Text = "Resumen de Deducciones";
+            this.lblTotalPagar.AutoSize = true;
+            this.lblTotalPagar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblTotalPagar.Location = new System.Drawing.Point(30, 165);
+            this.lblTotalPagar.Name = "lblTotalPagar";
+            this.lblTotalPagar.Size = new System.Drawing.Size(149, 20);
+            this.lblTotalPagar.TabIndex = 5;
+            this.lblTotalPagar.Text = "Total a pagar: $0.00";
 
-            this.lblISSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblISSS.Location = new System.Drawing.Point(25, 30);
-            this.lblISSS.Name = "lblISSS";
-            this.lblISSS.Size = new System.Drawing.Size(80, 20);
-            this.lblISSS.TabIndex = 0;
-            this.lblISSS.Text = "ISSS (3%):";
+            this.lblEstadoConsumo.AutoSize = true;
+            this.lblEstadoConsumo.Location = new System.Drawing.Point(30, 195);
+            this.lblEstadoConsumo.Name = "lblEstadoConsumo";
+            this.lblEstadoConsumo.Size = new System.Drawing.Size(135, 13);
+            this.lblEstadoConsumo.TabIndex = 6;
+            this.lblEstadoConsumo.Text = "Estado: Esperando datos...";
 
-            this.txtISSS.Location = new System.Drawing.Point(139, 29);
-            this.txtISSS.Name = "txtISSS";
-            this.txtISSS.ReadOnly = true;
-            this.txtISSS.Size = new System.Drawing.Size(230, 22);
-            this.txtISSS.TabIndex = 1;
 
-            this.lblAFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAFP.Location = new System.Drawing.Point(25, 65);
-            this.lblAFP.Name = "lblAFP";
-            this.lblAFP.Size = new System.Drawing.Size(108, 20);
-            this.lblAFP.TabIndex = 2;
-            this.lblAFP.Text = "AFP (7.25%):";
-
-            this.txtAFP.Location = new System.Drawing.Point(139, 64);
-            this.txtAFP.Name = "txtAFP";
-            this.txtAFP.ReadOnly = true;
-            this.txtAFP.Size = new System.Drawing.Size(230, 22);
-            this.txtAFP.TabIndex = 3;
-
-            this.lblISR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblISR.Location = new System.Drawing.Point(25, 98);
-            this.lblISR.Name = "lblISR";
-            this.lblISR.Size = new System.Drawing.Size(80, 20);
-            this.lblISR.TabIndex = 4;
-            this.lblISR.Text = "ISR:";
-
-            this.txtISR.Location = new System.Drawing.Point(139, 97);
-            this.txtISR.Name = "txtISR";
-            this.txtISR.ReadOnly = true;
-            this.txtISR.Size = new System.Drawing.Size(230, 22);
-            this.txtISR.TabIndex = 5;
-
-            this.lblSueldoNeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.lblSueldoNeto.Location = new System.Drawing.Point(20, 135);
-            this.lblSueldoNeto.Name = "lblSueldoNeto";
-            this.lblSueldoNeto.Size = new System.Drawing.Size(90, 20);
-            this.lblSueldoNeto.TabIndex = 6;
-            this.lblSueldoNeto.Text = "Sueldo Neto:";
-
-            this.txtSueldoNeto.Location = new System.Drawing.Point(139, 132);
-            this.txtSueldoNeto.Name = "txtSueldoNeto";
-            this.txtSueldoNeto.ReadOnly = true;
-            this.txtSueldoNeto.Size = new System.Drawing.Size(230, 22);
-            this.txtSueldoNeto.TabIndex = 7;
-
-            this.ClientSize = new System.Drawing.Size(514, 328);
-            this.Controls.Add(this.lblSueldo);
-            this.Controls.Add(this.txtSueldoBase);
-            this.Controls.Add(this.grpResultados);
+            this.ClientSize = new System.Drawing.Size(415, 291);
+            this.Controls.Add(this.lblEstadoConsumo);
+            this.Controls.Add(this.lblTotalPagar);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.txtMetros);
+            this.Controls.Add(this.lblMetros);
+            this.Controls.Add(this.lblTitulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cálculo de Deducciones";
-            this.grpResultados.ResumeLayout(false);
-            this.grpResultados.PerformLayout();
+            this.Text = "Consumo de Agua";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label lblMetros;
+        private System.Windows.Forms.TextBox txtMetros;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Label lblTotalPagar;
+        private System.Windows.Forms.Label lblEstadoConsumo;
     }
 }
