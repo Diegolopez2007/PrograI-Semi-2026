@@ -1,56 +1,80 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace miPrimeaAplicacion {
-    public partial class Form1 : Form {
-        public Form1() {
+namespace DeduccionesSueldo
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
             InitializeComponent();
         }
-        double media(double[] serie){
-            double suma = 0;
-            for (int i = 0; i < serie.Length; i++){
-                suma += serie[i];
-            }
-            double media = suma / serie.Length;
-            return media;
-        }
-        double varianza(double[] serie, double media) {
-            return serie.Average(n => Math.Pow(n - media, 2));
-        }
-        double desviacionTipica(double[] serie, double media){
-            return Math.Sqrt(varianza(serie, media));
-        }
-        double armonica(double[] serie) {
-            int n = serie.Length;
-            return n / serie.Sum(x=>1/x);
-        }
 
-        private void btnProcesar_Click(object sender, EventArgs e)
+        private void btnCalcular_Click(object sender, EventArgs e)
         {
-            limpiar();
-            String[] serie = txtSerie.Text.Split(',');
-            double[] miSerie = serie.Select(n=>double.Parse(n)).ToArray();
-            double m = media(miSerie);
+            if (double.TryParse(txtSueldoBase.Text, out double sueldoBase) && sueldoBase > 0)
+            {
 
-            ltsValores.Items.Add("La media es: " + m);
-            ltsValores.Items.Add("La desviacion estandar: " + varianza(miSerie, m));
-            ltsValores.Items.Add("La desviacion tipica: "+ desviacionTipica(miSerie, m));
-            ltsValores.Items.Add("La media armonica: " + armonica(miSerie));
+                double isss = sueldoBase * 0.03;
+                if (isss > 30.00)
+                {
+                    isss = 30.00;
+                }
+
+
+                double afp = sueldoBase * 0.0725;
+
+
+                double sueldoImponible = sueldoBase - isss - afp;
+
+
+                double isr = 0.0;
+
+                if (sueldoImponible <= 472.00)
+                {
+                    isr = 0.0;
+                }
+                else if (sueldoImponible <= 895.24)
+                {
+                    isr = ((sueldoImponible - 472.00) * 0.10) + 17.67;
+                }
+                else if (sueldoImponible <= 2038.10)
+                {
+                    isr = ((sueldoImponible - 895.24) * 0.20) + 60.00;
+                }
+                else
+                {
+                    isr = ((sueldoImponible - 2038.10) * 0.30) + 288.57;
+                }
+
+
+                double totalDeducciones = isss + afp + isr;
+                double sueldoNeto = sueldoBase - totalDeducciones;
+
+
+                txtISSS.Text = isss.ToString("C2");
+                txtAFP.Text = afp.ToString("C2");
+                txtISR.Text = isr.ToString("C2");
+                txtSueldoNeto.Text = sueldoNeto.ToString("C2");
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingrese un monto de sueldo válido mayor a cero.",
+                                "Error de entrada",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                txtSueldoBase.Focus();
+            }
         }
 
-        private void btnLimpiar_Click(object sender, EventArgs e) {
-            limpiar();
-        }
-        private void limpiar() {
-            ltsValores.Items.Clear();
-            //txtSerie.Clear();
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtSueldoBase.Clear();
+            txtISSS.Clear();
+            txtAFP.Clear();
+            txtISR.Clear();
+            txtSueldoNeto.Clear();
+            txtSueldoBase.Focus();
         }
     }
 }
