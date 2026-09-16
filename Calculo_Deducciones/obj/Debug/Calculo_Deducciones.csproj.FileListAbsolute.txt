@@ -1,0 +1,10 @@
+C:\Users\romero jr\Desktop\PROGRAMACION\Calculo_Deducciones\bin\Debug\Calculo_Deducciones.exe.config
+C:\Users\romero jr\Desktop\PROGRAMACION\Calculo_Deducciones\bin\Debug\Calculo_Deducciones.exe
+C:\Users\romero jr\Desktop\PROGRAMACION\Calculo_Deducciones\bin\Debug\Calculo_Deducciones.pdb
+C:\Users\romero jr\Desktop\PROGRAMACION\Calculo_Deducciones\obj\Debug\Calculo_Deducciones.csproj.AssemblyReference.cache
+C:\Users\romero jr\Desktop\PROGRAMACION\Calculo_Deducciones\obj\Debug\Calculo_Deducciones.Form1.resources
+C:\Users\romero jr\Desktop\PROGRAMACION\Calculo_Deducciones\obj\Debug\Calculo_Deducciones.Properties.Resources.resources
+C:\Users\romero jr\Desktop\PROGRAMACION\Calculo_Deducciones\obj\Debug\Calculo_Deducciones.csproj.GenerateResource.cache
+C:\Users\romero jr\Desktop\PROGRAMACION\Calculo_Deducciones\obj\Debug\Calculo_Deducciones.csproj.CoreCompileInputs.cache
+C:\Users\romero jr\Desktop\PROGRAMACION\Calculo_Deducciones\obj\Debug\Calculo_Deducciones.exe
+C:\Users\romero jr\Desktop\PROGRAMACION\Calculo_Deducciones\obj\Debug\Calculo_Deducciones.pdb
