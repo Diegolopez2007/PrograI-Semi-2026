@@ -17,9 +17,7 @@ namespace miPrimeaAplicacion
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // Código que se ejecuta al cargar el formulario
+        
         }
     }
 }
