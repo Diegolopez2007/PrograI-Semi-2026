@@ -1,5 +1,7 @@
-﻿namespace miPrimeaAplicacion {
-    partial class Form1 {
+﻿namespace miPrimeaAplicacion
+{
+    partial class Form1
+    {
         /// <summary>
         /// Variable del diseñador necesaria.
         /// </summary>
@@ -9,8 +11,10 @@
         /// Limpiar los recursos que se estén usando.
         /// </summary>
         /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
-        protected override void Dispose(bool disposing) {
-            if (disposing && (components != null)) {
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -22,151 +26,73 @@
         /// Método necesario para admitir el Diseñador. No se puede modificar
         /// el contenido de este método con el editor de código.
         /// </summary>
-        private void InitializeComponent() {
-            this.lblDe = new System.Windows.Forms.Label();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.btnCalcular = new System.Windows.Forms.Button();
-            this.lblRespuesta = new System.Windows.Forms.Label();
-            this.cboDe = new System.Windows.Forms.ComboBox();
-            this.cboA = new System.Windows.Forms.ComboBox();
-            this.lblA = new System.Windows.Forms.Label();
-            this.lblCantidad = new System.Windows.Forms.Label();
-            this.cboOpciones = new System.Windows.Forms.ComboBox();
-            this.lblOpciones = new System.Windows.Forms.Label();
+        private void InitializeComponent()
+        {
+            this.txtSerie = new System.Windows.Forms.TextBox();
+            this.btnProcesar = new System.Windows.Forms.Button();
+            this.ltsValores = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblDe
+            // txtSerie
             // 
-            this.lblDe.AutoSize = true;
-            this.lblDe.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDe.Location = new System.Drawing.Point(69, 163);
-            this.lblDe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblDe.Name = "lblDe";
-            this.lblDe.Size = new System.Drawing.Size(57, 33);
-            this.lblDe.TabIndex = 0;
-            this.lblDe.Text = "De:";
+            this.txtSerie.Location = new System.Drawing.Point(169, 34);
+            this.txtSerie.Name = "txtSerie";
+            this.txtSerie.Size = new System.Drawing.Size(410, 22);
+            this.txtSerie.TabIndex = 0;
             // 
-            // txtCantidad
+            // btnProcesar
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(200, 257);
-            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(184, 26);
-            this.txtCantidad.TabIndex = 1;
+            this.btnProcesar.Location = new System.Drawing.Point(459, 160);
+            this.btnProcesar.Name = "btnProcesar";
+            this.btnProcesar.Size = new System.Drawing.Size(120, 93);
+            this.btnProcesar.TabIndex = 1;
+            this.btnProcesar.Text = "Procesar";
+            this.btnProcesar.UseVisualStyleBackColor = true;
+            this.btnProcesar.Click += new System.EventHandler(this.btnProcesar_Click);
             // 
-            // btnCalcular
+            // ltsValores
             // 
-            this.btnCalcular.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(200, 365);
-            this.btnCalcular.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(285, 94);
-            this.btnCalcular.TabIndex = 2;
-            this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = true;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            this.ltsValores.FormattingEnabled = true;
+            this.ltsValores.ItemHeight = 16;
+            this.ltsValores.Location = new System.Drawing.Point(113, 164);
+            this.ltsValores.Name = "ltsValores";
+            this.ltsValores.Size = new System.Drawing.Size(283, 180);
+            this.ltsValores.TabIndex = 2;
             // 
-            // lblRespuesta
+            // label1
             // 
-            this.lblRespuesta.AutoSize = true;
-            this.lblRespuesta.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRespuesta.Location = new System.Drawing.Point(405, 257);
-            this.lblRespuesta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblRespuesta.Name = "lblRespuesta";
-            this.lblRespuesta.Size = new System.Drawing.Size(157, 33);
-            this.lblRespuesta.TabIndex = 5;
-            this.lblRespuesta.Text = "Respuesta: ?";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(110, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 16);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Serie:";
             // 
-            // cboDe
+            // btnLimpiar
             // 
-            this.cboDe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboDe.FormattingEnabled = true;
-            this.cboDe.Location = new System.Drawing.Point(132, 162);
-            this.cboDe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cboDe.Name = "cboDe";
-            this.cboDe.Size = new System.Drawing.Size(180, 28);
-            this.cboDe.TabIndex = 6;
-            // 
-            // cboA
-            // 
-            this.cboA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboA.FormattingEnabled = true;
-            this.cboA.Location = new System.Drawing.Point(411, 162);
-            this.cboA.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cboA.Name = "cboA";
-            this.cboA.Size = new System.Drawing.Size(180, 28);
-            this.cboA.TabIndex = 8;
-            // 
-            // lblA
-            // 
-            this.lblA.AutoSize = true;
-            this.lblA.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblA.Location = new System.Drawing.Point(348, 163);
-            this.lblA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblA.Name = "lblA";
-            this.lblA.Size = new System.Drawing.Size(43, 33);
-            this.lblA.TabIndex = 7;
-            this.lblA.Text = "A:";
-            // 
-            // lblCantidad
-            // 
-            this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidad.Location = new System.Drawing.Point(69, 257);
-            this.lblCantidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(124, 33);
-            this.lblCantidad.TabIndex = 9;
-            this.lblCantidad.Text = "Cantidad:";
-            // 
-            // cboOpciones
-            // 
-            this.cboOpciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboOpciones.FormattingEnabled = true;
-            this.cboOpciones.Items.AddRange(new object[] {
-            "Monedas",
-            "Masa",
-            "Volumen",
-            "Longitud",
-            "Almacenamiento",
-            "Tiempo"});
-            this.cboOpciones.Location = new System.Drawing.Point(204, 60);
-            this.cboOpciones.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cboOpciones.Name = "cboOpciones";
-            this.cboOpciones.Size = new System.Drawing.Size(386, 28);
-            this.cboOpciones.TabIndex = 10;
-            this.cboOpciones.SelectedIndexChanged += new System.EventHandler(this.cboOpciones_SelectedIndexChanged);
-            // 
-            // lblOpciones
-            // 
-            this.lblOpciones.AutoSize = true;
-            this.lblOpciones.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOpciones.Location = new System.Drawing.Point(69, 57);
-            this.lblOpciones.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblOpciones.Name = "lblOpciones";
-            this.lblOpciones.Size = new System.Drawing.Size(129, 33);
-            this.lblOpciones.TabIndex = 11;
-            this.lblOpciones.Text = "Opciones:";
+            this.btnLimpiar.Location = new System.Drawing.Point(459, 277);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(120, 89);
+            this.btnLimpiar.TabIndex = 4;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 511);
-            this.Controls.Add(this.lblOpciones);
-            this.Controls.Add(this.cboOpciones);
-            this.Controls.Add(this.lblCantidad);
-            this.Controls.Add(this.cboA);
-            this.Controls.Add(this.lblA);
-            this.Controls.Add(this.cboDe);
-            this.Controls.Add(this.lblRespuesta);
-            this.Controls.Add(this.btnCalcular);
-            this.Controls.Add(this.txtCantidad);
-            this.Controls.Add(this.lblDe);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ClientSize = new System.Drawing.Size(654, 409);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ltsValores);
+            this.Controls.Add(this.btnProcesar);
+            this.Controls.Add(this.txtSerie);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Conversor de Longitud";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,16 +100,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblDe;
-        private System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.Button btnCalcular;
-        private System.Windows.Forms.Label lblRespuesta;
-        private System.Windows.Forms.ComboBox cboDe;
-        private System.Windows.Forms.ComboBox cboA;
-        private System.Windows.Forms.Label lblA;
-        private System.Windows.Forms.Label lblCantidad;
-        private System.Windows.Forms.ComboBox cboOpciones;
-        private System.Windows.Forms.Label lblOpciones;
+        private System.Windows.Forms.TextBox txtSerie;
+        private System.Windows.Forms.Button btnProcesar;
+        private System.Windows.Forms.ListBox ltsValores;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
-
