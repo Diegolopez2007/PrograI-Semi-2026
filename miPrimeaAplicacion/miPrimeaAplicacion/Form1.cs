@@ -17,7 +17,15 @@ namespace miPrimeaAplicacion
             InitializeComponent();
         }
 
-        
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
+
+        private void grpDatos_Enter(object sender, EventArgs e)
+        {
+
+        }
+    }
     }
 }
