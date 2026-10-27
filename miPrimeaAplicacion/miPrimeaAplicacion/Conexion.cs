@@ -10,47 +10,72 @@ namespace miPrimeaAplicacion
 {
     public class Conexion
     {
-        // Definir miembros, atributos y objetos de ADO.NET
         public SqlConnection objConexion = new SqlConnection();
         public SqlCommand objComando = new SqlCommand();
         public SqlDataAdapter objDataAdapter = new SqlDataAdapter();
         DataSet objDs = new DataSet();
 
-        // Constructor e inicializador de los miembros de la clase
         public Conexion()
         {
-            // Apunta al archivo .mdf configurado
             String cadenaConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\db_academica.mdf;Integrated Security=True";
 
             objConexion.ConnectionString = cadenaConexion;
 
-            // Verificamos que la conexión esté abierta
             if (objConexion.State == ConnectionState.Closed)
             {
                 objConexion.Open();
             }
         }
 
+        // ==========================================
+        // MÉTODOS OBLIGATORIOS (Usuarios - usss126126)
+        // ==========================================
+        public DataSet crearDs()
+        {
+            objDs.Clear();
+            objComando.Connection = objConexion;
+            objDataAdapter.SelectCommand = objComando;
+            objComando.CommandText = "SELECT * FROM usuarios_usss126126";
+            objDataAdapter.Fill(objDs, "usuarios_usss126126");
+            return objDs;
+        }
+
+        public string mantenimiento_usuarios_usss126126(String[] datos, String accion)
+        {
+            String sql = "";
+            if (accion == "nuevo")
+            {
+                sql = "INSERT INTO usuarios_usss126126 (usuario, clave, nombre, direccion, telefono) VALUES ('" + datos[1] + "', '" + datos[2] + "', '" + datos[3] + "', '" + datos[4] + "', '" + datos[5] + "')";
+            }
+            else if (accion == "modificar")
+            {
+                sql = "UPDATE usuarios_usss126126 SET usuario='" + datos[1] + "', clave='" + datos[2] + "', nombre='" + datos[3] + "', direccion='" + datos[4] + "', telefono='" + datos[5] + "' WHERE idUsuario=" + datos[0];
+            }
+            else if (accion == "eliminar")
+            {
+                sql = "DELETE FROM usuarios_usss126126 WHERE idUsuario=" + datos[0];
+            }
+            return ejecutarSQL(sql);
+        }
+
+        // ==========================================
+        // MÉTODOS ANTERIORES (Intactos para tu proyecto)
+        // ==========================================
         public DataSet obtenerDatos()
         {
-            objDs.Clear(); // Limpiar el dataset
-
+            objDs.Clear();
             objComando.Connection = objConexion;
             objDataAdapter.SelectCommand = objComando;
 
-            // 1. Cargar Alumnos
             objComando.CommandText = "SELECT * FROM alumnos";
             objDataAdapter.Fill(objDs, "alumnos");
 
-            // 2. Cargar Materias
             objComando.CommandText = "SELECT * FROM materias";
             objDataAdapter.Fill(objDs, "materias");
 
-            // 3. Cargar Periodos
             objComando.CommandText = "SELECT * FROM periodos";
             objDataAdapter.Fill(objDs, "periodos");
 
-            // 4. Cargar Notas (Se corrigió a.idAlumno en el JOIN)
             objComando.CommandText = "SELECT n.idNota, a.nombre AS Alumno, p.periodo AS Periodo, n.fecha FROM notas n INNER JOIN alumnos a ON n.idAlumno = a.idAlumno INNER JOIN periodos p ON n.idPeriodo = p.idPeriodo";
             objDataAdapter.Fill(objDs, "notas");
 
@@ -62,17 +87,14 @@ namespace miPrimeaAplicacion
             String sql = "";
             if (accion == "nuevo")
             {
-                // Se corrigió [codigo] sin tilde
                 sql = "INSERT INTO alumnos (codigo, nombre, direccion, telefono, email) VALUES ('" + datos[1] + "', '" + datos[2] + "', '" + datos[3] + "', '" + datos[4] + "', '')";
             }
             else if (accion == "modificar")
             {
-                // Se corrigió idAlumno
                 sql = "UPDATE alumnos SET codigo='" + datos[1] + "', nombre='" + datos[2] + "', direccion='" + datos[3] + "', telefono='" + datos[4] + "' WHERE idAlumno=" + datos[0];
             }
             else if (accion == "eliminar")
             {
-                // Se corrigió idAlumno
                 sql = "DELETE FROM alumnos WHERE idAlumno=" + datos[0];
             }
             return ejecutarSQL(sql);
