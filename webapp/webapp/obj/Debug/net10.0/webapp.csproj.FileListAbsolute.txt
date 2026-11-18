@@ -322,8 +322,6 @@ D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\rj
 D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
 D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\scopedcss\bundle\webapp.styles.css
-D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\p0vihavs68-{0}-m3u2mg5erd-m3u2mg5erd.gz
-D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\s03rj8uvkt-{0}-2exq454069-2exq454069.gz
 D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\staticwebassets.build.json
 D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\staticwebassets.build.json.cache
 D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\staticwebassets.development.json
@@ -336,8 +334,11 @@ D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\re
 D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\webapp.pdb
 D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\webapp.genruntimeconfig.cache
 D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\ref\webapp.dll
-D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\uy7f9d0jbq-{0}-1p4p6uba3s-1p4p6uba3s.gz
 C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\s03rj8uvkt-{0}-m1qjluk4dj-m1qjluk4dj.gz
 C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\p0vihavs68-{0}-wz1c9fdiio-wz1c9fdiio.gz
 C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\uy7f9d0jbq-{0}-1ajoperdwd-1ajoperdwd.gz
 C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\1obysjw2lk-{0}-eis4xahpij-eis4xahpij.gz
+D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\uy7f9d0jbq-{0}-1ajoperdwd-1ajoperdwd.gz
+D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\p0vihavs68-{0}-wz1c9fdiio-wz1c9fdiio.gz
+D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\1obysjw2lk-{0}-sm565pfho4-sm565pfho4.gz
+D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\s03rj8uvkt-{0}-m1qjluk4dj-m1qjluk4dj.gz
