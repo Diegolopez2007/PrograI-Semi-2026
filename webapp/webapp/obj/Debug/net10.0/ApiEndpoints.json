@@ -109,6 +109,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AlumnosController",
+    "Method": "BuscarAlumno",
+    "RelativePath": "api/Alumnos/buscar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "buscar",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[webapp.Models.Alumno, webapp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "webapp.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

@@ -73,7 +73,7 @@ public class AlumnosController : ControllerBase
             }
         }
 
-        return NoContent();
+        return CreatedAtAction("GetAlumno", new { idalumno = alumno.idAlumno }, alumno);
     }
 
     // POST: api/Alumno

@@ -166,9 +166,6 @@ C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.
 C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\webapp.csproj.Up2Date
 C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\webapp.genruntimeconfig.cache
 C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\ref\webapp.dll
-C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\p0vihavs68-{0}-m3u2mg5erd-m3u2mg5erd.gz
-C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\s03rj8uvkt-{0}-2exq454069-2exq454069.gz
-C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\uy7f9d0jbq-{0}-5yajr3qpod-5yajr3qpod.gz
 D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\bin\Debug\net10.0\appsettings.Development.json
 D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\bin\Debug\net10.0\appsettings.json
 D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\bin\Debug\net10.0\webapp.staticwebassets.runtime.json
@@ -340,3 +337,7 @@ D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\we
 D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\webapp.genruntimeconfig.cache
 D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\ref\webapp.dll
 D:\Users\Estudiante\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\uy7f9d0jbq-{0}-1p4p6uba3s-1p4p6uba3s.gz
+C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\s03rj8uvkt-{0}-m1qjluk4dj-m1qjluk4dj.gz
+C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\p0vihavs68-{0}-wz1c9fdiio-wz1c9fdiio.gz
+C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\uy7f9d0jbq-{0}-1ajoperdwd-1ajoperdwd.gz
+C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\1obysjw2lk-{0}-eis4xahpij-eis4xahpij.gz
