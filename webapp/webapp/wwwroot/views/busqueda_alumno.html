@@ -5,7 +5,7 @@
                 Busqueda de Alumnos
 
                 <div class="ms-auto">
-                    <button data-ng-form="busqueda_alumno" type="button" class="btn-close" aria-label="Close"></button>
+                    <button data-form="busqueda_alumno" type="button" class="btn-close" aria-label="Close"></button>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@ txtBuscarAlumno.addEventListener('keyup', e => {
     listarAlumnos(txtBuscarAlumno.value);
     });
     async function listarAlumnos(buscar='') {
-        let alumnos = await obtenerAlumnos(buscar),
+        let alumnos = await obtenerDatos(buscar, 'Alumnos'),
             filas = '';
         alumnos.forEach(alumno => {
             filas += `

@@ -29,6 +29,12 @@ public class MateriasController : ControllerBase
         {
             consulta = consulta.Where(materia => materia.nombre.Contains(parametros.buscar));
         }
+        if (!string.IsNullOrEmpty(parametros.buscar) && consulta.Count()<=0)
+        {
+            consulta = _context.Materias.AsQueryable();
+            //consulta = consulta.Where(materia => materia.codigo==int.Parse(parametros.buscar));
+            consulta = consulta.Where(materia => materia.codigo.ToString().Contains(parametros.buscar) );
+        }
         return await consulta.ToListAsync();
     }
 

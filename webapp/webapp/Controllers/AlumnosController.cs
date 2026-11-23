@@ -28,6 +28,11 @@ public class AlumnosController : ControllerBase
         {
             consulta = consulta.Where(alumno => alumno.nombre.Contains(parametros.buscar));
         }
+        if (!string.IsNullOrEmpty(parametros.buscar) && consulta.Count()<=0)
+        {
+            consulta = _context.Alumnos.AsQueryable();
+            consulta = consulta.Where(alumno => alumno.codigo.Contains(parametros.buscar));
+        }
         return await consulta.ToListAsync();
     }
 

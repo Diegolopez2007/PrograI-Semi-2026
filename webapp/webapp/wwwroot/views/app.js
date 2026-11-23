@@ -20,15 +20,16 @@ function abrirVentana(form) {
 }
 function cerrarVentana(){
     $('.btn-close').click(e => {
-        $(`#${e.target.dataset.form}`).hidden();
+        console.log(e.target.dataset.form, e.target.dataset);
+        $(`#${e.target.dataset.form}`).hide();
     });
 }
 
-async function obtenerAlumnos(buscar = '') {
-    const respuesta = await fetch(`/api/Alumnos/buscar?buscar=${buscar}`, {
+async function obtenerDatos(buscar = '', form='Alumnos') {
+    const respuesta = await fetch(`/api/${form}/buscar?buscar=${buscar}`, {
         method: "GET",
         header: { "Content-Type": "application/json" }
     }),
-        alumnos = await respuesta.json();
-    return alumnos;
+        datos = await respuesta.json();
+    return datos;
 }
