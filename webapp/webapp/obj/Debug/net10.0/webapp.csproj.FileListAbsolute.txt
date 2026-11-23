@@ -328,7 +328,6 @@ C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.
 C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
 C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\scopedcss\bundle\webapp.styles.css
-C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\s03rj8uvkt-{0}-m1qjluk4dj-m1qjluk4dj.gz
 C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\staticwebassets.development.json
@@ -346,3 +345,6 @@ C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.
 C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\x105061u8t-{0}-s7qcdqzc5u-s7qcdqzc5u.gz
 C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\cwtrzoaovk-{0}-vt9fnrpxpt-vt9fnrpxpt.gz
 C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\p0vihavs68-{0}-nw070gvryk-nw070gvryk.gz
+C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\vl2nfumscf-{0}-55dsxpdzkn-55dsxpdzkn.gz
+C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\s03rj8uvkt-{0}-d7sa0dii4f-d7sa0dii4f.gz
+C:\Users\Luis Hernandez\Desktop\PrograI-Semi-2026\webapp\webapp\obj\Debug\net10.0\compressed\rvqac9zfpm-{0}-i7zudyptxz-i7zudyptxz.gz
